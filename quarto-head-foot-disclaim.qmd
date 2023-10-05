@@ -1,7 +1,34 @@
 ---
-title: "quarto-head-foot-disclaim"
+title: "Header/Footer/Disclaimer presentation"
+author: Evelyn J. Boettcher
+date: 2023-01-01
+subtitle: "Student Collected Data For Safer Navigation"
+
+disclosure: 
+    - "The views expressed do not represent the views of anyone."
+    - "No one believes this information."
+
+format:
+    revealjs:
+        incremental: false
+        template-partials:
+            - title-slide.html
+        header: "This is the default header"
+        footer: "This is the default footer"
+        filters:
+          - reveal-header
 ---
 
-## Quarto
+## some information
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+default footer
+
+## info with custom footer
+
+::: {.header}
+special header
+:::
+
+::: {.footer}
+special footer
+:::
